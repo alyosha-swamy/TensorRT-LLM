@@ -1,4 +1,5 @@
 from .base_checkpoint_loader import BaseCheckpointLoader
+from .hf.afmoe_weight_mapper import AfmoeHfWeightMapper
 from .hf.checkpoint_loader import HfCheckpointLoader
 from .hf.config_loader import HfConfigLoader
 from .hf.gemma3_weight_mapper import Gemma3HfWeightMapper
@@ -22,11 +23,11 @@ from .mistral.weight_mapper import (MistralLarge3WeightMapper,
 from .mx.checkpoint_loader import MXCheckpointLoader
 
 __all__ = [
-    "HfConfigLoader", "HfWeightLoader", "HfWeightMapper", "MistralConfigLoader",
-    "MistralWeightMapper", "MistralCheckpointLoader", "BaseCheckpointLoader",
-    "HfCheckpointLoader", "NemotronHHfWeightMapper", "Gemma3HfWeightMapper",
-    "MixtralHfWeightMapper", "Llama4HfWeightMapper", "Qwen2MoeHfWeightMapper",
-    "Qwen3MoeHfWeightMapper", "Qwen2VLHfWeightMapper",
+    "AfmoeHfWeightMapper", "HfConfigLoader", "HfWeightLoader", "HfWeightMapper",
+    "MistralConfigLoader", "MistralWeightMapper", "MistralCheckpointLoader",
+    "BaseCheckpointLoader", "HfCheckpointLoader", "NemotronHHfWeightMapper",
+    "Gemma3HfWeightMapper", "MixtralHfWeightMapper", "Llama4HfWeightMapper",
+    "Qwen2MoeHfWeightMapper", "Qwen3MoeHfWeightMapper", "Qwen2VLHfWeightMapper",
     "Qwen3_5MoeHfWeightMapper", "Qwen3NextHfWeightMapper",
     "LlavaNextHfWeightMapper", "MistralLarge3CheckpointLoader",
     "MistralLarge3WeightMapper", "MXCheckpointLoader", "Qwen3VLHfWeightMapper"

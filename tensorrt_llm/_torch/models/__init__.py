@@ -1,5 +1,6 @@
 import transformers
 
+from .modeling_afmoe import AfmoeForCausalLM
 from .modeling_auto import AutoModelForCausalLM
 from .modeling_bert import BertForSequenceClassification
 from .modeling_clip import CLIPVisionModel
@@ -43,6 +44,7 @@ from .modeling_vila import VilaModel
 
 # Note: for better readiblity, this should have same order as imports above
 __all__ = [
+    "AfmoeForCausalLM",
     "AutoModelForCausalLM",
     "BertForSequenceClassification",
     "CLIPVisionModel",
